@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <title>Архитектура программных систем</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="css/main.css">
+    {% endblock %}
+
+    {% block javascripts %}
+        <script src="js/main.js"></script>
+    {% endblock %}
+
+</head>
+<body class="body">
+    <div class="body__header">
+        {% include '../modules/header.twig' %}
+    </div>
+    <div class="body__content">
+        {% block body %}{% endblock %}
+    </div>
+    <div class="body__footer">
+        {% include '../modules/footer.twig' %}
+    </div>
+</body>
+</html>
