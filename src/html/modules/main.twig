@@ -10,11 +10,12 @@
     {% endblock %}
 
     {% block javascripts %}
-        <script src="js/main.js"></script>
+        <script src="js/jquery.min.js"></script>
     {% endblock %}
 
 </head>
 <body class="body">
+    {% include '../modules/modal.twig' %}
     <div class="body__header">
         {% include '../modules/header.twig' %}
     </div>
@@ -24,5 +25,6 @@
     <div class="body__footer">
         {% include '../modules/footer.twig' %}
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

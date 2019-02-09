@@ -1,0 +1,43 @@
+//Popup windows
+.overlay
+   position fixed
+   width 100%
+   min-height 100vh
+   background rgba(1,1,1,0.5)
+   display none
+   align-items center
+   justify-content center
+   transition 0.5s
+   z-index 3
+.overlay-main
+   padding 6px
+   background #fff
+   display flex
+   align-items center
+   justify-content center
+.button--close
+   position absolute
+   right 5px
+   top 2px
+   cursor pointer
+   font-family _ops, Arial, sans-serif
+   font-size 25px
+   transition 0.3s
+.button--close:hover
+   color #ea446c
+   transition 0.3s
+
+.nav-mobile
+   border 5px solid #d3eff2
+   text-align center
+   position relative
+.nav-mobile__item
+   margin 20px
+   a
+      cursor pointer
+      font-size 25px
+      color #5b5b5b
+      transition 0.3s
+   a:hover
+      transition 0.3s
+      color #ea446c

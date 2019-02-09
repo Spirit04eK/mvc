@@ -1,0 +1,52 @@
+.header
+   background #d3eff2
+   height 60px
+   width 100%
+   display flex
+   align-items center
+.header__list--item
+   display inline
+   margin-right 10px
+   a
+      cursor pointer
+      color #5b5b5b
+      font-size 20px
+      transition 0.3s
+      text-decoration none
+   a:hover
+      color #12a9c4
+      transition 0.3s
+
+.list__burger
+   position relative
+   display none
+   width 60px
+   height 60px
+   cursor pointer
+   margin-top 15px
+   margin-right 20px
+   margin-bottom 20px
+.list__burger:hover
+   .list__burger--line
+      background black
+.list__burger--line
+   position absolute
+   right 0
+   width 60px
+   height 4px
+   background #5b5b5b
+   transition 0.3s
+.list__burger--line:nth-child(1)
+   top 10px
+.list__burger--line:nth-child(2)
+   top 28px
+.list__burger--line:nth-child(3)
+   top 46px
+@media (max-width: 979px)
+   .header__nav
+      margin-left 10px
+      margin-right 10px
+   .header__list--item
+      display none
+   .list__burger
+      display block

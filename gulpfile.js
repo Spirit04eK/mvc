@@ -70,7 +70,7 @@ gulp.task('compile_lib_js', function () {
 
 //Assembly my js file
 gulp.task('compile_js', function () {
-    gulp.src('src/js/mvc/**/*.js')
+    gulp.src('src/js/**/*.js')
         .pipe(concat('main.js'))
         .pipe( gulp.dest('production/js/') )
 });
@@ -81,7 +81,7 @@ var watch = ['browser-sync', 'compile_stylus', 'compile_twig','compile_lib_js', 
 gulp.task('watch', watch, function() {
     gulp.watch('src/css/**/*.styl', ['compile_stylus'], browserSync.reload);
     gulp.watch('src/html/**/*.twig', ['compile_twig'], browserSync.reload);
-    gulp.watch('src/js/common/*.js', ['compile_js'], browserSync.reload);
+    gulp.watch('src/js/**/*.js', ['compile_js'], browserSync.reload);
     gulp.watch('src/js/lib/*', ['compile_lib_js'], browserSync.reload);
     gulp.watch('src/img/*', ['compress'], browserSync.reload);
 });
